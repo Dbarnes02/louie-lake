@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "Noto";
+    src: url("../fonts/NotoSerifDisplay.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IntroLight";
+    src: url("../fonts/IntroLight.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Intro";
+    src: url("../fonts/IntroRegular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #f8f7f4;
+    font-family: "Intro";
+    font-size: 1.14rem;
+    line-height: 1.9;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #f8f7f4;
+}
+
+
+.navbar {
+    max-width: 1500px;
+    margin: auto;
+}
+
+h1 { 
+    font-family: "Noto";
+    color: #EFF3F4;
+    font-size: clamp(3.75rem, 10vw, 10rem);
+    font-weight: 400;
+    line-height: normal;
+    text-shadow:
+    2px 2px 0 #17888E,
+    -2px 2px 0 #17888E,
+    -2px -2px 0 #17888E,
+    2px -2px 0 #17888E;
+}
+
+h2 {
+    font-family: "Noto";
+    font-size: clamp(3rem, 6vw, 5.2rem);
+    padding: 7.2rem 0;
+}
+
+.contact h2 {
+    color: #17888E;
+    font-family: "Intro";
+    font-size: clamp(2rem, 6vw, 3rem);
+    padding-bottom: 6rem;
+}
+
+.accommodations h2 {
+    font-size: clamp(1.9rem, 8vw, 5.2rem);
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    text-decoration: underline solid;
+}
+
+.btn {
+    background-color: #17888E;
+    padding: 0.20rem;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border: 2px solid #17888E;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btn a {
+    color: #EFF3F4;
+    font-weight: bold;
+    width: 10rem;
+    font-size: 1.2rem;
+}
+
+.btn a:hover {
+    color: #17888E;
+}
+
+.hero-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.hero-banner p span {
+    font-family: "IntroLight";
+    color: #EFF3F4;
+    font-size: clamp(2.75rem, 6vw, 6rem);
+    letter-spacing: 0.1rem;
+    text-shadow:
+    2px 2px 0 #17888E,
+    -2px 2px 0 #17888E,
+    -2px -2px 0 #17888E,
+    2px -2px 0 #17888E;
+}
+
+.hero-home {
+    background-image: url("../img/3.webp");
+}
+
+.hero-accom {
+    background-image: url("../img/62.webp");
+}
+
+.hero-amen {
+    background-image: url("../img/9.webp");
+}
+
+.hero-facil {
+    background-image: url("../img/42.webp");
+}
+
+.hero-rates {
+    background-image: url("../img/2.webp");
+}
+
+.home-banner {
+    background-color: #8FBBBC;
+    color: #17888E;
+    padding: 5rem 0 3rem 0;
+    margin-bottom: 7.2rem;
+    height: auto;
+}
+
+.home-banner img {
+    background-color: #17888E;
+}
+
+@media screen and (min-width: 992px) {
+    .home-banner {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-banner p span {
+        letter-spacing: 0.6rem;
+    }
+
+    .home-banner {
+        height: 600px;
+    }
+}
+
+.welcome {
+    margin-top: 14.2rem;
+    background-color: #C6B8B7;
+    color: #EFF3F4;
+    width: 100%;
+
+}
+
+.welcome img {
+    border: 0.65rem solid #8FBBBC;
+    border-radius: 0 4rem 0 4rem;
+    position: relative;
+    top: -6rem;
+}
+
+.welcome-text {
+    position: relative;
+    top: -6rem;
+}
+
+@media screen and (min-width: 992px) {
+    .welcome {
+        padding: 4rem 0;
+        position: relative;
+        left: 20rem;
+        width: 100vw;
+    }
+
+    .welcome img {
+        left: -20rem;
+        top: 0;
+    }
+    
+    .welcome-text {
+        left: -20rem;
+        top: 0;
+    }
+}
+
+
+@media screen and (min-width: 1650px) {
+    .welcome {
+        left: 40rem;
+    }
+    
+    .welcome img {
+        left: -40rem; 
+    }
+
+    .welcome-text {
+        left: -40rem;
+    }
+}
+
+
+.contact {
+    margin-bottom: 7.2rem;
+}
+
+.contact-info {
+    background-color: #EFF3F4;
+}
+
+.contact i {
+    font-size: 3rem;
+    color: #17888E;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.accommodations {
+    margin-bottom: 7.2rem;
+}
+
+#myCarousel {
+    max-width: 60rem;
+    margin: auto;
+}
+
+#myCarousel img {
+    border: 12px solid #C6B8B7;
+    border-radius: 0.4rem;
+}
+
+.amenities .row img, .fac-items img {
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+.site-map {
+    max-width: 50rem;
+    margin: auto;
+}
+
+.site-map-bg {
+    background-color: #C6B8B7;
+    margin-bottom: 2rem;
+    margin: 3rem auto;
+    position: relative;
+    left: 1rem;
+    top: -1rem;
+}
+
+.site-map img {
+    position: relative;
+    left: -1rem;
+    top: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .site-map-bg {
+        position: relative;
+        left: 2rem;
+        top: -2rem;
+    }
+    
+    .site-map img {
+        position: relative;
+        left: -2rem;
+        top: 2rem;
+    }
+}
+
+.site-map .btn {
+    background-color: #EFF3F4;
+    border: 2px solid #17888E;
+    color: #17888E;
+    padding: 1rem 2rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.rates-info {
+    background-color: #C6B8B7;
+    color: #EFF3F4;
+    max-width: 45rem;
+    margin: auto;
+    border-radius: 0.4rem;
+}
+
+.rates .btn  {
+    background-color: #EFF3F4;
+    color: #17888E;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 7.2rem;
+    background-color: #8FBBBC;
+    color: #EFF3F4;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footer-logo {
+    justify-content: center;
+}
+
+@media screen and (min-width:992px) {
+    .footer-logo {
+        justify-content: end;
+    }
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer a {
+    color: #F2F1F7;
+}
+
+
+.socials a {
+    font-size: 1.75rem;
+    height: 28px;
+}
